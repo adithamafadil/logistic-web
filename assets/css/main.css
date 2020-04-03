@@ -1,0 +1,42 @@
+/* Reset Default Styles */
+* {
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 32px 32px;
+}
+
+.navbar a {
+  font-weight: bold;
+}
+
+.navbar-items a {
+  margin-right: 16px;
+  font-weight: normal;
+}
+
+.navbar-items a:last-child {
+  margin-right: 0;
+}
