@@ -1,9 +1,19 @@
-/* Reset Default Styles */
+/* Default Styles */
+:root {
+  --theme-blue: #404aa1;
+  --theme-white: #f9f9f9;
+}
 * {
   outline: none;
   box-sizing: border-box;
   transition: all 0.25s ease-in-out;
   font-family: "Oxygen";
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
 }
 
 h1,
@@ -38,7 +48,14 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 32px 32px 32px;
+  padding: 20px 32px 20px 32px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
 }
 
 .navbar a {
@@ -55,23 +72,97 @@ p {
   margin-right: 0;
 }
 
+/* Content */
+.carousel-banner {
+  margin-top: 63px;
+}
+
 .about-company,
-.produk-layanan {
+.product-services,
+.partnership,
+.vision-mission-company {
   padding: 36px 10% 24px 10%;
   align-content: center;
 }
 
-.about-company {
+.about-company,
+.vision-mission-company,
+.product-services .items {
   flex: 1;
   display: flex;
   align-items: center;
   width: 100%;
   display: flex;
-  align-items: flex-end;
+}
+
+.about-company .content {
+  padding-left: 5%;
+}
+
+.vision-mission-company .content {
+  padding-right: 5%;
+}
+
+.vision-mission-company .content {
+  text-align: right;
+}
+
+.spacer {
+  height: 5em;
+}
+
+.about-company .content .btn {
+  background-color: var(--theme-blue);
+  width: 40%;
+  height: 3.5em;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.product-services {
+  background-color: var(--theme-white);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-services .items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-services .items .items-group .product-services-items {
+  padding-top: 36px;
+}
+
+.product-services .items .items-group .product-services-items img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-services .items .items-group .product-services-items p {
+  text-align: center;
+}
+
+.partnership {
+  display: block;
+  flex-direction: row;
+}
+
+.partnership .carousel .carousel-inner .carousel-item {
+  width: 20%;
+  padding: 24px;
+  margin: 0;
+}
+
+.company-description {
+  padding: 0.5% 5%;
+  text-align: justify;
 }
 
 /* Media Query */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 900px) {
   /* Navbar */
   .navbar {
     flex-direction: column;
@@ -81,7 +172,6 @@ p {
 
   .hamburger {
     display: flex;
-    /* align-items: center; */
     width: 32px;
     height: 32px;
     position: fixed;
@@ -134,6 +224,7 @@ p {
     top: 10px;
   }
 
+  /* Navbar */
   .navbar-items {
     position: fixed;
     display: flex;
@@ -157,11 +248,39 @@ p {
     margin: 24px 0;
     font-size: 1.5em;
   }
+
+  /* Content */
+  .about-company,
+  .vision-mission-company .content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2em 12px 12px 12px;
+  }
+
+  .vision-mission-company img {
+    display: none;
+  }
+
+  .product-services .items .items-group .product-services-items img {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .about-company,
-  .produk-layanan {
-    font-size: 0.45em;
+  .product-services,
+  .partnership,
+  .company-description,
+  .vision-mission-company {
+    font-size: 0.7em;
+  }
+
+  .btn {
+    font-size: 0.95em;
+  }
+
+  .product-services .items .items-group .product-services-items img {
+    width: 30%;
   }
 }
