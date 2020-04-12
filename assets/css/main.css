@@ -92,7 +92,6 @@ p {
   display: flex;
   align-items: center;
   width: 100%;
-  display: flex;
 }
 
 .about-company .content {
@@ -150,10 +149,17 @@ p {
   flex-direction: row;
 }
 
-.partnership .carousel .carousel-inner .carousel-item {
+.partnership .carousel-continous .items {
   width: 20%;
   padding: 24px;
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  animation: ease-in-out;
+}
+
+.partnership .carousel-continous .items img {
+  padding: 0 24px;
 }
 
 .company-description {
@@ -161,15 +167,39 @@ p {
   text-align: justify;
 }
 
+.footer {
+  background-color: black;
+  height: 500px;
+  padding: 9% 3%;
+  color: var(--theme-white);
+  display: flex;
+  bottom: 0;
+}
+
+.footer .location,
+.footer .access {
+  padding: 0 2%;
+}
+
+.footer .location h2,
+.footer .access h2 {
+  font-size: 1.8em;
+}
+
+.footer .location p,
+.footer .access p {
+  color: var(--theme-white);
+  font-size: 1.2em;
+}
+
+.footer .company-logo h2 {
+  font-size: 1.7em;
+  padding-top: 50%;
+}
+
 /* Media Query */
 @media only screen and (max-width: 900px) {
   /* Navbar */
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
   .hamburger {
     display: flex;
     width: 32px;
@@ -224,7 +254,12 @@ p {
     top: 10px;
   }
 
-  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
   .navbar-items {
     position: fixed;
     display: flex;
@@ -265,6 +300,10 @@ p {
   .product-services .items .items-group .product-services-items img {
     width: 70%;
   }
+
+  .footer .location {
+    padding-bottom: 10%;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -282,5 +321,24 @@ p {
 
   .product-services .items .items-group .product-services-items img {
     width: 30%;
+  }
+
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .footer .location h2,
+  .footer .access h2 {
+    font-size: 1.2em;
+  }
+
+  .footer .location p,
+  .footer .access p {
+    font-size: 0.95em;
+  }
+
+  .footer .company-logo h2 {
+    padding-top: 10%;
   }
 }

@@ -1,7 +1,9 @@
 /* Default Styles */
 :root {
   --theme-blue: #404aa1;
+  --theme-white: #f9f9f9;
 }
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -28,7 +30,6 @@ p {
 h1,
 h2,
 h3 {
-  font-weight: bold;
   font-size: 3em;
 }
 
@@ -39,19 +40,142 @@ p {
 }
 
 /* Content */
-.base {
-  background-color: yellow;
+
+.base .base-blue {
+  background-color: var(--theme-blue);
   height: 100vh;
+  width: 70vw;
+  padding-top: 3vh;
+  padding-left: 57vw;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.base .blue {
-  background-color: blue;
-  height: 100vh;
-  width: 80vw;
+.base .base-blue .navbar {
+  /* display: none; */
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: block;
+  font-size: 10px;
+  color: white;
 }
 
-.base .blue .base-form {
-  background-color: red;
-  height: 100vh;
-  width: 50vw;
+.base .base-blue .welcome-text {
+  text-align: right;
+  display: flex;
+  position: fixed;
+  font-size: 15px;
+  color: white;
+  width: 100%;
+  letter-spacing: 0.5em;
+  padding-left: 9em;
+}
+
+.base .base-blue .more-base {
+  width: 100%;
+}
+
+.base .base-blue .more-base .base-form {
+  background-color: var(--theme-white);
+  height: 70vh;
+  width: 23em;
+  display: flex;
+  flex: 1;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 36px 1% 24px 1%;
+  justify-content: center;
+}
+
+.base .base-blue .more-base .base-form h2 {
+  text-align: center;
+}
+
+.base .base-blue .more-base .base-form .form-group .form-control {
+  position: relative;
+  display: inline-block;
+}
+
+.base .base-blue .more-base .base-form .list-button {
+  float: right;
+}
+
+.base .base-blue .more-base .base-form .list-button .btn-info {
+  background-color: var(--theme-blue);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  border: none;
+}
+
+.base .base-blue .more-base .base-form .list-button .btn-outline {
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  color: var(--theme-blue);
+}
+
+.spacer {
+  height: 3em;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 1125px) {
+  .base .base-blue .welcome-text {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .base .base-blue {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding-left: 50%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    filter: unset !important;
+  }
+
+  .base .base-blue .welcome-text {
+    padding-right: 70em;
+  }
+
+  .base .base-blue .more-base .base-form {
+    width: 20em;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .base h4,
+  p {
+    font-size: 1.5em;
+  }
+
+  .base .base-blue .navbar {
+    align-self: center;
+    font-size: 0.5em;
+  }
+
+  .base .base-blue {
+    padding: 0;
+    display: flex;
+  }
+  .base .base-blue .welcome-text {
+    display: none;
+  }
+
+  .base .base-blue .more-base .base-form {
+    font-size: 0.8em;
+    height: 33em;
+    margin: auto;
+    width: 70%;
+  }
 }
