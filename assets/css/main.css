@@ -8,6 +8,7 @@
   box-sizing: border-box;
   transition: all 0.25s ease-in-out;
   font-family: "Oxygen";
+  scroll-behavior: smooth;
 }
 
 body {
@@ -149,17 +150,19 @@ p {
   flex-direction: row;
 }
 
+.partnership .carousel-continous {
+  padding: 0;
+}
 .partnership .carousel-continous .items {
   width: 20%;
-  padding: 24px;
   margin: 0;
   display: flex;
   flex-direction: row;
-  animation: ease-in-out;
 }
 
 .partnership .carousel-continous .items img {
-  padding: 0 24px;
+  padding: 0 36px;
+  width: 400%;
 }
 
 .company-description {
@@ -241,9 +244,11 @@ p {
 
   .hamburger.active span::before {
     transform: rotate(45deg);
+    background-color: white;
   }
   .hamburger.active span::after {
     transform: rotate(-45deg);
+    background-color: white;
   }
 
   .hamburger span::before {
@@ -260,7 +265,7 @@ p {
     justify-content: center;
   }
 
-  .navbar-items {
+  .navbar .navbar-items {
     position: fixed;
     display: flex;
     top: 0;
@@ -282,6 +287,7 @@ p {
   .navbar-items a {
     margin: 24px 0;
     font-size: 1.5em;
+    color: white;
   }
 
   /* Content */
@@ -299,6 +305,10 @@ p {
 
   .product-services .items .items-group .product-services-items img {
     width: 70%;
+  }
+
+  .partnership .carousel-continous .items img {
+    width: 280%;
   }
 
   .footer .location {
@@ -321,6 +331,13 @@ p {
 
   .product-services .items .items-group .product-services-items img {
     width: 30%;
+  }
+
+  .partnership .carousel-continous .items {
+    display: block;
+  }
+  .partnership .carousel-continous .items img {
+    width: 25em;
   }
 
   .footer {

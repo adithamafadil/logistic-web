@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Dashboard Costumer</title>
+
+    <!-- Style -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/table.css" />
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h4>Company Logo</h4>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a
+              href="#Submenu1"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Menu 1</a
+            >
+            <ul class="collapse list-unstyled" id="Submenu1">
+              <li>
+                <a href="#">Menu 1.1</a>
+              </li>
+              <li>
+                <a href="#">Menu 1.2</a>
+              </li>
+              <li>
+                <a href="#">Menu 1.3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#Submenu2"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Menu 2</a
+            >
+            <ul class="collapse list-unstyled" id="Submenu2">
+              <li>
+                <a href="#">Menu 2.1</a>
+                <a href="#">Menu 2.2</a>
+                <a href="#">Menu 2.3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#Submenu3"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Menu 3</a
+            >
+            <ul class="collapse list-unstyled" id="Submenu3">
+              <li>
+                <a href="#">Menu 3.1</a>
+              </li>
+              <li>
+                <a href="#">Menu 3.2</a>
+              </li>
+              <li>
+                <a href="#">Menu 3.3</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a
+              href="#Submenu4"
+              data-toggle="collapse"
+              aria-expanded="false"
+              class="dropdown-toggle"
+              >Menu 4</a
+            >
+            <ul class="collapse list-unstyled" id="Submenu4">
+              <li>
+                <a href="#">Menu 4.1</a>
+              </li>
+              <li>
+                <a href="#">Menu 4.2</a>
+              </li>
+              <li>
+                <a href="#">Menu 4.3</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Isi Page  -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+              <i class="fas fa-align-left"></i>
+              <span>Menu</span>
+            </button>
+            <button
+              class="btn btn-dark d-inline-block d-lg-none ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fas fa-align-justify"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Welcome, Costumer</a
+                  >
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">log out</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container">
+          <div class="row-pt-1-pb-1">
+            <div class="col-lg-12">
+              <h1 class="text-center">Lorem Ipsum</h1>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="btn btn-primary btn-xs pull-right"
+            style="margin-left: 70%; margin-top: -9%;"
+          >
+            <b>+</b> Add Item
+          </a>
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <section class="search-sec">
+          <div class="container">
+            <form action="#" method="post" novalidate="novalidate">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                      <input
+                        type="text"
+                        class="form-control search-slt"
+                        placeholder="lorem ipsum"
+                      />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                      <input
+                        type="text"
+                        class="form-control search-slt"
+                        placeholder="lorem ipsum"
+                      />
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                      <select
+                        class="form-control search-slt"
+                        id="exampleFormControlSelect1"
+                      >
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                        <option>lorem ipsum</option>
+                      </select>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+                      <button type="button" class="btn btn-danger wrn-btn">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="container">
+          <div
+            class="row col-md-6 col-md-offset-2 custyle"
+            style="margin-left: 28%;"
+          >
+            <table class="table table-striped custab">
+              <thead>
+                <tr>
+                  <th>Lorem</th>
+                  <th>Lorem</th>
+                  <th>Lorem</th>
+                  <th class="text-center">Lorem</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>1</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#"
+                    ><span class="glyphicon glyphicon-edit"></span> "Status"</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#"
+                    ><span class="glyphicon glyphicon-edit"></span> Status</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#">
+                    <span class="glyphicon glyphicon-edit"></span> "Status"</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Popper.JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+      integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+          $("#sidebar").toggleClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
