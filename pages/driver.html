@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Dashboard Admin</title>
+    <title>Dashboard Custumer</title>
 
     <!-- Style -->
     <link
@@ -29,11 +29,11 @@
       <!-- Sidebar  -->
       <nav id="sidebar">
         <div class="sidebar-header">
-          <h4><a href="admin.html">Company Logo</a></h4>
+          <h4><a href="#">Company Logo</a></h4>
         </div>
 
         <ul class="list-unstyled components">
-          <li>
+          <li class="active">
             <a
               href="#Submenu1"
               data-toggle="collapse"
@@ -43,9 +43,8 @@
             >
             <ul class="collapse list-unstyled" id="Submenu1">
               <li>
-                <a href="admin1.1.html">Menu 1.1</a>
+                <a href="#">Menu 1.1</a>
               </li>
-              <li></li>
             </ul>
           </li>
         </ul>
@@ -83,7 +82,7 @@
                     aria-haspopup="true"
                     aria-expanded="false"
                   >
-                    Welcome, Admin</a
+                    Welcome, Driver</a
                   >
                   <div class="spacer-width"></div>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -95,53 +94,22 @@
           </div>
         </nav>
 
-        <h1 class="text-center">Lorem Ipsum</h1>
-        <div class="spacer"></div>
-        <section class="search-sec">
-          <div class="container">
-            <form action="#" method="post" novalidate="novalidate">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="row">
-                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                      <input
-                        type="text"
-                        class="form-control search-slt"
-                        placeholder="lorem ipsum"
-                      />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                      <input
-                        type="text"
-                        class="form-control search-slt"
-                        placeholder="lorem ipsum"
-                      />
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                      <select
-                        class="form-control search-slt"
-                        id="exampleFormControlSelect1"
-                      >
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                        <option>lorem ipsum</option>
-                      </select>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-12 p-0">
-                      <button type="button" class="btn btn-danger wrn-btn">
-                        Search
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
+        <div class="container-header">
+          <h1 class="text-center">Lorem Ipsum</h1>
+
+          <div class="d-flex justify-content-center">
+            <div class="searchbar">
+              <input
+                class="search_input"
+                type="text"
+                name=""
+                placeholder="Search..."
+              />
+              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            </div>
           </div>
-        </section>
+        </div>
+        <div class="spacer"></div>
         <div class="container-table">
           <div class="row">
             <table class="table table-striped custab">
@@ -157,19 +125,37 @@
                 <td>1</td>
                 <td>Lorem</td>
                 <td>Lorem</td>
-                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#">Done</a>
+                  <a href="#" class="btn btn-danger btn-xs">Pending</a>
+                  <button type="button" class="btn btn-info btn-xs">
+                    <span class="fas fa-print"></span>
+                  </button>
+                </td>
               </tr>
               <tr>
                 <td>2</td>
                 <td>Lorem</td>
                 <td>Lorem</td>
-                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#">Done</a>
+                  <a href="#" class="btn btn-danger btn-xs">Pending</a>
+                  <button type="button" class="btn btn-info btn-xs">
+                    <span class="fas fa-print"></span>
+                  </button>
+                </td>
               </tr>
               <tr>
                 <td>3</td>
                 <td>Lorem</td>
                 <td>Lorem</td>
-                <td>Lorem</td>
+                <td class="text-center">
+                  <a class="btn btn-info btn-xs" href="#">Done</a>
+                  <a href="#" class="btn btn-danger btn-xs">Pending</a>
+                  <button type="button" class="btn btn-info btn-xs">
+                    <i class="fas fa-print"></i>
+                  </button>
+                </td>
               </tr>
             </table>
           </div>
