@@ -128,6 +128,7 @@ p {
 .product-services {
   background-color: var(--theme-white);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: var(--theme-blue);
 }
 
 .product-services .items {
@@ -152,6 +153,7 @@ p {
 .partnership {
   display: block;
   flex-direction: row;
+  color: var(--theme-blue);
 }
 
 .partnership .carousel-continous {
