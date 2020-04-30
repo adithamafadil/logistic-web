@@ -126,8 +126,8 @@ p {
 }
 
 .product-services {
-  background-color: var(--theme-white);
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #cf2229;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   color: var(--theme-blue);
 }
 
@@ -148,12 +148,14 @@ p {
 
 .product-services .items .items-group .product-services-items p {
   text-align: center;
+  color: white;
 }
 
 .partnership {
   display: block;
   flex-direction: row;
   color: var(--theme-blue);
+  padding-bottom: 5%;
 }
 
 .partnership .carousel-continous {
