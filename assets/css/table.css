@@ -1,7 +1,8 @@
 :root {
-  --theme-blue: #404aa1;
+  --theme-blue: #21246b;
   --theme-white: #f9f9f9;
 }
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -15,11 +16,6 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-/* 
-.btn {
-  background-color: var(--theme-blue);
-  color: white;
-} */
 
 h1,
 h2,
@@ -50,6 +46,12 @@ a:focus {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s;
+}
+
+.btn-custom {
+  background-color: #cf2229;
+  border: none;
+  color: white;
 }
 
 /* Navbar */
@@ -128,6 +130,10 @@ a:focus {
 #sidebar .sidebar-header {
   padding: 20px;
   background: var(--theme-blue);
+}
+
+#sidebar .sidebar-header .company-logo img {
+  width: 130px;
 }
 
 #sidebar ul.components {
@@ -229,22 +235,10 @@ td {
   margin: 0;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #00008b;
-  color: white;
-  text-align: center;
-}
-.panel-group {
-  background-color: whitesmoke;
-}
-
 /*search box css start here*/
 .search-sec {
   padding: 2rem;
+  border-radius: 15px;
 }
 .search-slt {
   display: block;
@@ -270,7 +264,7 @@ td {
   .search-sec {
     position: relative;
     top: -114px;
-    background: rgba(26, 70, 104, 0.51);
+    background: var(--theme-blue);
   }
 }
 
@@ -280,7 +274,7 @@ td {
   }
 
   .search-sec {
-    background: #1a4668;
+    background: var(--theme-blue);
   }
   .wrapper .container-header {
     display: block;
@@ -340,7 +334,7 @@ td {
   .search-sec {
     position: relative;
     top: -114px;
-    background: rgba(26, 70, 104, 0.51);
+    background: var(--theme-blue);
   }
 }
 

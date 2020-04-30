@@ -1,6 +1,6 @@
 /* Default Styles */
 :root {
-  --theme-blue: #404aa1;
+  --theme-blue: #21246b;
   --theme-white: #f9f9f9;
 }
 * {
@@ -40,6 +40,10 @@ p {
   font-size: 1.5em;
 }
 
+.company-logo img {
+  width: 130px;
+}
+
 /* Navbar */
 .hamburger {
   display: none;
@@ -49,7 +53,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 32px 20px 32px;
+  padding: 12px 32px;
   overflow: hidden;
   background-color: white;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
@@ -151,7 +155,7 @@ p {
 }
 
 .partnership .carousel-continous {
-  padding: 0;
+  padding: 50px 0 0 0;
 }
 .partnership .carousel-continous .items {
   width: 20%;
@@ -171,12 +175,13 @@ p {
 }
 
 .footer {
-  background-color: black;
+  background-color: var(--theme-blue);
   height: 500px;
   padding: 9% 3%;
   color: var(--theme-white);
   display: flex;
   bottom: 0;
+  align-items: center;
 }
 
 .footer .location,
@@ -195,13 +200,14 @@ p {
   font-size: 1.2em;
 }
 
-.footer .company-logo h2 {
-  font-size: 1.7em;
-  padding-top: 50%;
+.footer .footer-company-logo img {
+  width: 80%;
+  padding-left: 30%;
 }
 
 /* Media Query */
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 1090px) {
   /* Navbar */
   .hamburger {
     display: flex;
@@ -289,7 +295,8 @@ p {
     font-size: 1.5em;
     color: white;
   }
-
+}
+@media only screen and (max-width: 900px) {
   /* Content */
   .about-company,
   .vision-mission-company .content {
@@ -317,6 +324,10 @@ p {
 }
 
 @media only screen and (max-width: 750px) {
+  .company-logo img {
+    width: 100px;
+  }
+
   .about-company,
   .product-services,
   .partnership,
@@ -355,7 +366,9 @@ p {
     font-size: 0.95em;
   }
 
-  .footer .company-logo h2 {
-    padding-top: 10%;
+  .footer .footer-company-logo img {
+    padding-top: 7%;
+    padding-left: 0;
+    width: 20%;
   }
 }
