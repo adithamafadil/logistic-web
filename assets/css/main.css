@@ -126,7 +126,7 @@ p {
 }
 
 .product-services {
-  background-color: #cf2229;
+  background-color: var(--theme-white);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   color: var(--theme-blue);
 }
@@ -148,7 +148,7 @@ p {
 
 .product-services .items .items-group .product-services-items p {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .partnership {
@@ -182,7 +182,7 @@ p {
   background-color: var(--theme-blue);
   height: 500px;
   padding: 9% 3%;
-  color: var(--theme-white);
+  color: #cf2229;
   display: flex;
   bottom: 0;
   align-items: center;
