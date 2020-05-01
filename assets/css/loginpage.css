@@ -118,10 +118,17 @@ p {
   text-align: center;
 }
 
-.base .base-red .more-base .base-form .form-group .form-control,
+.base .base-red .more-base .base-form .form-group .dropdown,
 .base .base-blue .more-base .base-form .form-group .form-control {
   position: relative;
   display: inline-block;
+}
+
+.base .base-red .more-base .base-form .form-group .dropdown {
+  background-color: var(--theme-white);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  justify-content: space-between;
 }
 
 .base .base-blue .more-base .base-form .list-button {
