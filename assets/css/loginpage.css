@@ -45,8 +45,8 @@ p {
 
 /* Content */
 
-.base .base-blue {
-  background-color: var(--theme-blue);
+.base .base-blue,
+.base .base-red {
   height: 100vh;
   width: 70vw;
   padding-top: 3vh;
@@ -56,7 +56,16 @@ p {
   justify-content: center;
 }
 
-.base .base-blue .navbar {
+.base .base-blue {
+  background-color: var(--theme-blue);
+}
+
+.base .base-red {
+  background-color: #cf2229;
+}
+
+.base .base-blue .navbar,
+.base .base-red .navbar {
   /* display: none; */
   position: absolute;
   top: 24px;
@@ -66,22 +75,32 @@ p {
   color: white;
 }
 
-.base .base-blue .welcome-text {
+.base .base-blue .welcome-text,
+.base .base-red .welcome-text {
   text-align: right;
   display: flex;
   position: fixed;
   font-size: 15px;
-  color: white;
   width: 100%;
   letter-spacing: 0.5em;
   padding-left: 9em;
 }
 
-.base .base-blue .more-base {
+.base .base-blue .welcome-text {
+  color: #cf2229;
+}
+
+.base .base-red .welcome-text {
+  color: white;
+}
+
+.base .base-blue .more-base,
+.base .base-red .more-base {
   width: 100%;
 }
 
-.base .base-blue .more-base .base-form {
+.base .base-blue .more-base .base-form,
+.base .base-red .more-base .base-form {
   background-color: var(--theme-white);
   height: 70vh;
   width: 23em;
@@ -94,10 +113,12 @@ p {
   align-items: center;
 }
 
+.base .base-red .more-base .base-form h2,
 .base .base-blue .more-base .base-form h2 {
   text-align: center;
 }
 
+.base .base-red .more-base .base-form .form-group .form-control,
 .base .base-blue .more-base .base-form .form-group .form-control {
   position: relative;
   display: inline-block;
@@ -134,14 +155,17 @@ p {
 }
 
 /* Media Query */
-
 @media only screen and (max-width: 1125px) {
-  .base .base-blue .welcome-text {
+  .base .base-blue .welcome-text,
+  .base .base-red .welcome-text {
     padding-left: 0;
+    font-size: 13px;
   }
 }
+
 @media only screen and (max-width: 900px) {
-  .base .base-blue {
+  .base .base-blue,
+  .base .base-red {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -154,11 +178,13 @@ p {
     filter: unset !important;
   }
 
-  .base .base-blue .welcome-text {
+  .base .base-blue .welcome-text,
+  .base .base-red .welcome-text {
     padding-right: 70em;
   }
 
-  .base .base-blue .more-base .base-form {
+  .base .base-blue .more-base .base-form,
+  .base .base-red .more-base .base-form {
     width: 20em;
     padding-right: 7%;
     padding-left: 7%;
@@ -171,20 +197,24 @@ p {
     font-size: 1.5em;
   }
 
-  .base .base-blue .navbar {
+  .base .base-blue .navbar,
+  .base .base-red .navbar {
     align-self: center;
     font-size: 0.5em;
   }
 
-  .base .base-blue {
+  .base .base-blue,
+  .base .base-red {
     padding: 0;
     display: flex;
   }
-  .base .base-blue .welcome-text {
+  .base .base-blue .welcome-text,
+  .base .base-red .welcome-text {
     display: none;
   }
 
-  .base .base-blue .more-base .base-form {
+  .base .base-blue .more-base .base-form,
+  .base .base-red .more-base .base-form {
     font-size: 0.8em;
     height: 33em;
     margin: auto;
