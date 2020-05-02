@@ -101,7 +101,7 @@ p {
 .base .base-blue .more-base .base-form,
 .base .base-red .more-base .base-form {
   background-color: var(--theme-white);
-  height: 70vh;
+  height: 70%;
   width: 23em;
   display: flex;
   flex: 1;
@@ -198,6 +198,10 @@ p {
 }
 
 @media only screen and (max-width: 715px) {
+  .company-logo img {
+    width: 100px;
+  }
+
   .base h4,
   p {
     font-size: 1.5em;
