@@ -1,5 +1,6 @@
 :root {
-  --theme-blue: #21246b;
+  --theme-blue: #404aa1;
+  --theme-blue-dark: #21246b;
   --theme-white: #f9f9f9;
 }
 
@@ -64,12 +65,6 @@ a:focus {
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-btn {
-  box-shadow: none;
-  outline: none !important;
-  border: none;
-}
-
 .line {
   width: 100%;
   height: 1px;
@@ -118,7 +113,8 @@ a:focus {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: var(--theme-blue);
+  background-image: linear-gradient(135deg, #21246b 0%, #404aa1b3 100%);
+
   color: #fff;
   transition: all 0.3s;
 }
@@ -129,7 +125,7 @@ a:focus {
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background: var(--theme-blue);
+  background-image: linear-gradient(135deg, #21246b 0%, #404aa1b3 100%);
 }
 
 #sidebar .sidebar-header .company-logo img {
@@ -238,7 +234,8 @@ td {
 /*search box css start here*/
 .search-sec {
   padding: 2rem;
-  border-radius: 15px;
+  margin: 0 5%;
+  border-radius: 10px;
 }
 .search-slt {
   display: block;
@@ -264,7 +261,6 @@ td {
   .search-sec {
     position: relative;
     top: -114px;
-    background: var(--theme-blue);
   }
 }
 
@@ -273,9 +269,6 @@ td {
     height: 2.5em;
   }
 
-  .search-sec {
-    background: var(--theme-blue);
-  }
   .wrapper .container-header {
     display: block;
   }
@@ -307,9 +300,7 @@ td {
 }
 
 /* Searchbar */
-.search-sec {
-  padding: 2rem;
-}
+
 .search-slt {
   display: block;
   width: 100%;
@@ -322,6 +313,7 @@ td {
   height: calc(3rem + 2px) !important;
   border-radius: 0;
 }
+
 .wrn-btn {
   width: 100%;
   font-size: 16px;
@@ -330,6 +322,7 @@ td {
   height: calc(3rem + 2px) !important;
   border-radius: 0;
 }
+
 @media (min-width: 992px) {
   .search-sec {
     position: relative;

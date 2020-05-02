@@ -1,6 +1,7 @@
 /* Default Styles */
 :root {
-  --theme-blue: #21246b;
+  --theme-blue: #404aa1;
+  --theme-blue-gradient: #5862bc;
   --theme-white: #f9f9f9;
 }
 
@@ -45,8 +46,7 @@ p {
 
 /* Content */
 
-.base .base-blue,
-.base .base-red {
+.base .base-blue {
   height: 100vh;
   width: 70vw;
   padding-top: 3vh;
@@ -57,15 +57,10 @@ p {
 }
 
 .base .base-blue {
-  background-color: var(--theme-blue);
+  background-image: linear-gradient(135deg, #21246b 0%, #404aa1b3 100%);
 }
 
-.base .base-red {
-  background-color: #cf2229;
-}
-
-.base .base-blue .navbar,
-.base .base-red .navbar {
+.base .base-blue .navbar {
   position: absolute;
   top: 24px;
   left: 24px;
@@ -74,8 +69,7 @@ p {
   color: white;
 }
 
-.base .base-blue .welcome-text,
-.base .base-red .welcome-text {
+.base .base-blue .welcome-text {
   text-align: right;
   display: flex;
   position: fixed;
@@ -85,18 +79,15 @@ p {
   padding-left: 9em;
 }
 
-.base .base-blue .welcome-text,
-.base .base-red .welcome-text {
+.base .base-blue .welcome-text {
   color: white;
 }
 
-.base .base-blue .more-base,
-.base .base-red .more-base {
+.base .base-blue .more-base {
   width: 100%;
 }
 
-.base .base-blue .more-base .base-form,
-.base .base-red .more-base .base-form {
+.base .base-blue .more-base .base-form {
   background-color: var(--theme-white);
   height: 70%;
   width: 23em;
@@ -109,18 +100,16 @@ p {
   align-items: center;
 }
 
-.base .base-red .more-base .base-form h2,
 .base .base-blue .more-base .base-form h2 {
   text-align: center;
 }
 
-.base .base-red .more-base .base-form .form-group .dropdown,
 .base .base-blue .more-base .base-form .form-group .form-control {
   position: relative;
   display: inline-block;
 }
 
-.base .base-red .more-base .base-form .form-group .dropdown {
+.base .base-blue .more-base .base-form .form-group .dropdown {
   background-color: var(--theme-white);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -159,16 +148,14 @@ p {
 
 /* Media Query */
 @media only screen and (max-width: 1125px) {
-  .base .base-blue .welcome-text,
-  .base .base-red .welcome-text {
+  .base .base-blue .welcome-text {
     padding-left: 0;
     font-size: 13px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .base .base-blue,
-  .base .base-red {
+  .base .base-blue {
     width: 100vw;
     position: fixed;
     top: 0;
@@ -181,13 +168,11 @@ p {
     filter: unset !important;
   }
 
-  .base .base-blue .welcome-text,
-  .base .base-red .welcome-text {
+  .base .base-blue .welcome-text {
     padding-right: 70em;
   }
 
-  .base .base-blue .more-base .base-form,
-  .base .base-red .more-base .base-form {
+  .base .base-blue .more-base .base-form {
     width: 20em;
     padding-right: 7%;
     padding-left: 7%;
@@ -204,24 +189,20 @@ p {
     font-size: 1.5em;
   }
 
-  .base .base-blue .navbar,
-  .base .base-red .navbar {
+  .base .base-blue .navbar {
     align-self: center;
     font-size: 0.5em;
   }
 
-  .base .base-blue,
-  .base .base-red {
+  .base .base-blue {
     padding: 0;
     display: flex;
   }
-  .base .base-blue .welcome-text,
-  .base .base-red .welcome-text {
+  .base .base-blue .welcome-text {
     display: none;
   }
 
-  .base .base-blue .more-base .base-form,
-  .base .base-red .more-base .base-form {
+  .base .base-blue .more-base .base-form {
     font-size: 0.8em;
     height: 33em;
     margin: auto;

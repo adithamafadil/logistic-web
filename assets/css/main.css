@@ -1,8 +1,9 @@
 /* Default Styles */
 :root {
-  --theme-blue: #21246b;
+  --theme-blue: #404aa1;
   --theme-white: #f9f9f9;
 }
+
 * {
   outline: none;
   box-sizing: border-box;
@@ -72,6 +73,12 @@ p {
   font-weight: normal;
 }
 
+.navbar-items .btn {
+  width: 5em;
+  color: white;
+  background-color: var(--theme-blue);
+}
+
 .navbar-items a:last-child {
   margin-right: 0;
 }
@@ -82,7 +89,6 @@ p {
 }
 
 .about-company,
-.product-services,
 .partnership,
 .vision-mission-company {
   padding: 36px 10% 24px 10%;
@@ -124,30 +130,65 @@ p {
   margin-top: 5%;
 }
 
-.product-services {
-  background-color: var(--theme-white);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-  color: var(--theme-blue);
-}
-
-.product-services .items {
+.product-services .content {
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  flex-direction: column;
 }
 
-.product-services .items .items-group .product-services-items {
-  padding-top: 36px;
-}
-
-.product-services .items .items-group .product-services-items img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.product-services .items .items-group .product-services-items p {
+.product-services .title {
+  position: absolute;
+  align-items: center;
+  align-content: center;
   text-align: center;
-  color: black;
+  color: white;
+  width: 100%;
+  padding: 10% 0;
+}
+
+.product-services .title h4 {
+  padding-top: 3%;
+  text-align: center;
+  padding: 12px 10%;
+}
+
+.product-services .content .image .block {
+  background: rgba(26, 26, 27, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.product-services .content .image {
+  background: url("../images/truck-photo.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+.product-services .content .items {
+  padding: 12px 20%;
+  justify-content: space-between;
+  position: absolute;
+  margin: 27% 0 10% 0;
+  background-color: rgba(249, 249, 249, 0.3);
+  width: 100%;
+  display: flex;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product-services .content .items .items-group {
+  text-align: center;
+  padding-top: 24px;
+}
+
+.product-services .content .items .items-group img {
+  height: 50%;
 }
 
 .partnership {
@@ -178,7 +219,11 @@ p {
 }
 
 .footer {
-  background-color: var(--theme-blue);
+  background: linear-gradient(
+    0deg,
+    rgba(33, 36, 107, 1) 0%,
+    rgba(60, 64, 153, 1) 64%
+  );
   height: 500px;
   padding: 9% 3%;
   color: #cf2229;
@@ -309,12 +354,12 @@ p {
     padding: 2em 12px 12px 12px;
   }
 
-  .vision-mission-company img {
-    display: none;
+  .product-services .content .items {
+    margin-top: 40%;
   }
 
-  .product-services .items .items-group .product-services-items img {
-    width: 70%;
+  .vision-mission-company img {
+    display: none;
   }
 
   .partnership .carousel-continous .items img {
@@ -339,17 +384,36 @@ p {
     font-size: 0.7em;
   }
 
-  .btn {
-    font-size: 0.95em;
+  .product-services .title {
+    font-size: 1em;
+    padding: 20% 5% 0 5%;
   }
 
-  .product-services .items .items-group .product-services-items img {
-    width: 30%;
+  .product-services .title h2 {
+    font-size: 3em;
+    padding-bottom: 5%;
+  }
+
+  .product-services .title h4 {
+    font-size: 1.3em;
+  }
+
+  .product-services .content .items {
+    margin-top: 50%;
+  }
+
+  .product-services .content .items .items-group img {
+    height: 70px;
+  }
+
+  .btn {
+    font-size: 0.95em;
   }
 
   .partnership .carousel-continous .items {
     display: block;
   }
+
   .partnership .carousel-continous .items img {
     width: 25em;
   }
@@ -373,5 +437,22 @@ p {
     padding-top: 7%;
     padding-left: 0;
     width: 20%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .product-services .content .items {
+    margin-top: 50%;
+    flex-direction: column;
+  }
+
+  .product-services .content .items .items-group img {
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .product-services .content .items {
+    margin-top: 65%;
   }
 }
