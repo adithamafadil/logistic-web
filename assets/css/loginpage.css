@@ -85,10 +85,7 @@ p {
   padding-left: 9em;
 }
 
-.base .base-blue .welcome-text {
-  color: #cf2229;
-}
-
+.base .base-blue .welcome-text,
 .base .base-red .welcome-text {
   color: white;
 }
