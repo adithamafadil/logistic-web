@@ -130,7 +130,7 @@ a:focus {
 }
 
 .wrapper .container-biodata .biodata,
-.wrapper .container-biodata .description-label {
+.wrapper .container-biodata .description {
   padding: 2% 5% 0 5%;
 }
 
@@ -149,7 +149,6 @@ a:focus {
 
 .wrapper .container-biodata .description {
   font-size: 90%;
-  padding-top: 2%;
 }
 
 .wrapper .container-biodata .description p {
@@ -271,6 +270,11 @@ ul.CTAs a {
 
   .wrapper .container-biodata .description-label {
     display: block;
+    margin: 0;
+  }
+
+  .wrapper .container-biodata .description p {
+    text-align: left;
   }
 
   .wrapper .container-biodata .biodata {
