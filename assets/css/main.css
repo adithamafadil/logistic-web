@@ -96,12 +96,18 @@ p {
 }
 
 .about-company,
+.article,
 .vision-mission-company,
 .product-services .items {
   flex: 1;
   display: flex;
   align-items: center;
   width: 100%;
+}
+
+.about-company h2 {
+  color: var(--theme-blue);
+  padding: 12px 0;
 }
 
 .about-company .content {
@@ -120,14 +126,15 @@ p {
   height: 5em;
 }
 
-.about-company .content .btn {
+.about-company .content .btn,
+.article .btn {
   background-color: var(--theme-blue);
-  width: 40%;
   height: 3.5em;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
   margin-top: 5%;
+  padding: 12px;
 }
 
 .product-services .content {
@@ -189,6 +196,83 @@ p {
 
 .product-services .content .items .items-group img {
   height: 50%;
+}
+
+.article {
+  align-items: center;
+  padding: 36px;
+  flex-direction: column;
+  color: var(--theme-blue);
+}
+
+.article h2 {
+  padding-bottom: 2%;
+}
+
+.article h3 {
+  font-size: 2em;
+  padding: 12px 0;
+}
+
+.article .article-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 2%;
+}
+
+.article .article-content a.article-link {
+  display: block;
+  top: 0px;
+  position: relative;
+  width: 28%;
+  background-color: rgba(64, 74, 161, 0.1);
+  border-radius: 7px;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  box-shadow: 2px 4px 8px rgba(38, 38, 38, 0.2);
+  padding: 2%;
+}
+
+.article .article-content a.article-link:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px solid #cccccc;
+  background-color: white;
+}
+
+.article .article-content a.article-link:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--theme-blue);
+  width: 28%;
+  border-radius: 32px;
+  transform: scale(2);
+  transform-origin: 50% 50%;
+  transition: transform 0.15s ease-out;
+}
+
+.article .article-content a.article-link:hover:before {
+  transform: scale(2.15);
+}
+
+.article .article-content a.article-link .article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 2%;
+}
+
+.article .article-content a.article-link img {
+  width: 250px;
+}
+
+.article .article-content a.article-link .article-card p {
+  text-align: center;
+  font-size: 0.9em;
 }
 
 .partnership {
@@ -344,6 +428,7 @@ p {
     color: white;
   }
 }
+
 @media only screen and (max-width: 900px) {
   /* Content */
   .about-company,
@@ -378,10 +463,15 @@ p {
 
   .about-company,
   .product-services,
+  .article,
   .partnership,
   .company-description,
   .vision-mission-company {
     font-size: 0.7em;
+  }
+
+  .article .article-content a.article-link img {
+    width: 80%;
   }
 
   .product-services .title {
@@ -441,6 +531,16 @@ p {
 }
 
 @media only screen and (max-width: 540px) {
+  .article .article-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article .article-content a.article-link {
+    width: 70%;
+    margin-bottom: 5%;
+  }
+
   .product-services .content .items {
     margin-top: 50%;
     flex-direction: column;

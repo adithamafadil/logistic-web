@@ -110,6 +110,62 @@ a:focus {
   padding: 0 5%;
 }
 
+.card {
+  padding: 2%;
+  margin: 2%;
+}
+
+.wrapper .container-biodata .content-top,
+.wrapper .container-biodata .biodata {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper .container-biodata .content-top {
+  justify-content: space-between;
+}
+.wrapper .container-biodata .content-top .btn {
+  height: 2.5em;
+  background-color: var(--theme-blue);
+}
+
+.wrapper .container-biodata .biodata,
+.wrapper .container-biodata .description-label {
+  padding: 2% 5% 0 5%;
+}
+
+.wrapper .container-biodata .biodata {
+  font-size: 80%;
+  justify-content: space-around;
+}
+
+.wrapper .container-biodata .biodata p {
+  font-weight: bold;
+}
+
+.wrapper .container-biodata .description-label {
+  display: none;
+}
+
+.wrapper .container-biodata .description {
+  font-size: 90%;
+  padding-top: 2%;
+}
+
+.wrapper .container-biodata .description p {
+  text-align: center;
+  font-size: 120%;
+}
+
+.wrapper .table-card {
+  align-items: center;
+}
+
+.wrapper .table-card h4 {
+  font-weight: bold;
+  padding-bottom: 2%;
+}
+
 #sidebar {
   min-width: 250px;
   max-width: 250px;
@@ -204,12 +260,23 @@ ul.CTAs a {
   #sidebar {
     margin-left: -250px;
   }
+
   #sidebar.active {
     margin-left: 0;
   }
+
   #sidebarCollapse span {
     display: none;
   }
+
+  .wrapper .container-biodata .description-label {
+    display: block;
+  }
+
+  .wrapper .container-biodata .biodata {
+    flex-direction: column;
+  }
+
   .wrapper .navbar .container-fluid .btn {
     background-color: var(--theme-blue);
     display: block;
@@ -272,12 +339,18 @@ td {
   .wrapper .container-header {
     display: block;
   }
+
   .wrapper .container-header h1 {
     padding-bottom: 5%;
   }
+
   .wrapper .container-header .btn {
     margin-left: 30%;
     margin-top: 5%;
+  }
+
+  .wrapper .container-biodata {
+    font-size: 80%;
   }
 
   .wrapper .container-table {
@@ -364,7 +437,7 @@ td {
 
 .searchbar:hover > .search_input {
   padding: 0 10px;
-  width: 450px;
+  width: 300px;
   caret-color: white;
   transition: width 0.4s linear;
 }
